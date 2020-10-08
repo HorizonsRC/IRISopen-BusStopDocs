@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BusStopDocs": {
+      "commandName": "Project",
+      "commandLineArgs": "IRISopen://file/AppData/IRIS Support Solutions/ERA/ERA_Auto_IRISLIVE.bat"
+    }
+  }
+}
