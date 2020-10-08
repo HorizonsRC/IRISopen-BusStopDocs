@@ -34,3 +34,18 @@ client system.
 
 
 BusStopDocs is installed at **\\file\AppData\IRIS Support Solutions\IRISopen**
+
+## changes to IRIS
+
+changes had to be made to IRIS to be able to handle the protocol. Namely these changes were made in the DocumentGrid.ascx located at
+"~\Controls\Document\Views\DocumentsGrid orig.ascx"
+On line 16 the '<a>' tag should be changed.
+  - the orgiginal line reads:     <a href="<%# ((EDRMSDocument)Container.DataItem).URL %>"
+  - this needs to be changed to:  <a href= "irisopen:<%# HttpUtility.UrlEncode(((EDRMSDocument)Container.DataItem).URL.ToString()) %>"
+
+The new link not only needs to include the custom protocol, but the existing URL needs to be turned to a string and encoded.
+This is so it is handled correctly by the BusStopDocs application.
+  
+
+
+
