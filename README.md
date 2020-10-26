@@ -18,19 +18,19 @@ client system.
                                                 
                                                 Windows Registry Editor Version 5.00
 
-                                                [HKEY_CURRENT_USER\Software\Classes\IRISopen]
+                                                [HKEY_LOCAL_MACHINE\Software\Classes\IRISopen]
                                                 "URL Protocol"="\"\""
                                                 @="\"URL:IRISopen Protocol\""
 
-                                                [HKEY_CURRENT_USER\Software\Classes\IRISopen\DefaultIcon]
+                                                [HKEY_LOCAL_MACHINE\Software\Classes\IRISopen\DefaultIcon]
                                                 @="\"BusStopDocs.exe,1\""
 
-                                                [HKEY_CURRENT_USER\Software\Classes\IRISopen\shell]
+                                                [HKEY_LOCAL_MACHINE\Software\Classes\IRISopen\shell]
 
-                                                [HKEY_CURRENT_USER\Software\Classes\IRISopen\shell\open]
+                                                [HKEY_LOCAL_MACHINE\Software\Classes\IRISopen\shell\open]
 
-                                                [HKEY_CURRENT_USER\Software\Classes\IRISopen\shell\open\command]
-                                                @="\"C:\\Program Files\\IRISopen\\BusStopDocs.exe\" \"%1\""
+                                                [HKEY_LOCAL_MACHINE\Software\Classes\IRISopen\shell\open\command]
+                                                @="\"\\\\file\\AppData\\IRIS Support Solutions\\IRISopen\\BusStopDocs.exe\" \"%1\""
 
 
 BusStopDocs is installed at **\\file\AppData\IRIS Support Solutions\IRISopen**
